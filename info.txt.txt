@@ -1,0 +1,112 @@
+i wanna make a web development project 
+the title of this project is finance advisor which helps the user to organise money in an efficient way 
+i want to create this project into 6 modules 
+1. expense tracking and categorization 
+2. saving goals tracker
+3. debt management
+4. financial health dashboard
+5. automated bill reminder
+6. financial goals planning
+
+
+
+1. EXPENCE TRACKING AND CATEGORIZATION
+	the expenses involves food shopping travelling entertainment and other things these should be entered manually every day
+	and monthly expenses which are same throughout the year includes rent,groceries,current,bill,waterbill,ott,mobilerecharge
+	if the user is a student institution fees and other course fees
+	and there should be given on expense limit
+2. SAVINGS GOALS TRACKING
+	involves monthly avg income 
+	other sources of income
+	scholarships
+	monthly savings
+	saving goals
+3. DEBT MANAGEMENT PLAN
+	it is like a small note saver
+	if we have given loan to someone or we have taken from someone to just take a note of it;
+4. FINANCIAL HEALTH DASHBOARD
+	total income 
+	total expenses
+	savings ratio
+	some graphs
+	monthly trends
+5. AUTOMATED BILL REMAINDERS
+	loan,recharge,bills,forgotten subscriptions
+6. FINACIAL GOAL PLANNING
+		
+tech stack: React,nodejs,expressjs,rest api,fast api,mongodb
+
+
+
+
+
+
+frontend/
+ └── src/
+     ├── pages/
+     │    └── Login.jsx
+	 |	  └── main.jsx
+	 |	  └── tracking.jsx
+	 |	  └── savingoal.jsx
+	 | 	  └── debtmanagement.jsx
+	 |	  └── finacialgoal.jsx
+	 |	  └── automatedbill.jsx
+	 
+     ├── services/
+     │    └── api.js
+     ├── App.jsx
+     └── index.js
+
+
+backend/
+├── src/
+│   ├── server.js
+│   ├── app.js
+│
+│   ├── config/
+│   │   └── db.js
+│
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Expense.js
+│   │   ├── Savings.js
+│   │   ├── Debt.js
+│   │   ├── BillReminder.js
+│   │   └── FinancialGoal.js
+│
+│   ├── routes/
+│   │   ├── auth.routes.js
+│   │   ├── expense.routes.js
+│   │   ├── savings.routes.js
+│   │   ├── debt.routes.js
+│   │   ├── bill.routes.js
+│   │   ├── dashboard.routes.js
+│   │   └── goal.routes.js
+│
+│   ├── controllers/
+│   │   ├── auth.controller.js
+│   │   ├── expense.controller.js
+│   │   ├── savings.controller.js
+│   │   ├── debt.controller.js
+│   │   ├── bill.controller.js
+│   │   ├── dashboard.controller.js
+│   │   └── goal.controller.js
+│
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── errorMiddleware.js
+│
+│   ├── utils/
+│   │   ├── hash.js
+│   │   └── token.js
+│
+│   └── constants/
+│       └── categories.js
+│
+├── .env
+└── package.json
+
+
+
+
+it shoud contain two buttons one id register another is enter, enter requires just user id and password but register requires new user name new password and email phone number this shoud besaved in data base
